@@ -20,7 +20,7 @@ Scapy library
 
 git clone https://github.com/zhamilton85/packet_sniffer.git
 
-cd Packet-Sniffer
+cd packet_sniffer
 
 
 **Install the required libraries:**
