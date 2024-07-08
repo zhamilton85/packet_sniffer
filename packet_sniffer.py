@@ -1,3 +1,5 @@
+from scapy.all import *
+
 def packet_callback(packet):
     if IP in packet:
         src_ip = packet[IP].src
