@@ -1,4 +1,5 @@
 from scapy.all import *
+import argparse
 
 def packet_callback(packet):
     if IP in packet:
@@ -19,8 +20,13 @@ def packet_callback(packet):
         else:
             print(f"Other IP Packet:\n{packet.summary()}\n")
 
-# Replace 'eth0' with your network interface
-network_interface = 'eth0'
+def main():
+    parser = argparse.ArgumentParser(description="A simple packet sniffer")
+    parser.add_argument("-i", "--interface", required=True, help="Network interface to sniff on (e.g., eth0, wlan0)")
+    args = parser.parse_args()
+    
+    print(f"Sniffing packets on interface {args.interface}...\n")
+    sniff(iface=args.interface, prn=packet_callback, store=0)
 
-print(f"Sniffing packets on interface {network_interface}...\n")
-sniff(iface=network_interface, prn=packet_callback, store=0)
+if __name__ == "__main__":
+    main()
