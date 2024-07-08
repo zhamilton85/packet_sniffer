@@ -26,7 +26,6 @@ A Python3-based packet sniffer for Linux, utilizing the Scapy library to capture
     ```
     pip install -r requirements.txt
 
-    pip install scapy
     ```
 
 ## Usage
