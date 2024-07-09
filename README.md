@@ -24,12 +24,6 @@ A Python3-based packet sniffer for Linux, utilizing the Scapy library to capture
     Ensure you have Python 3 and pip installed. Install the required Python packages using:
 
     ```
-    pip install -r requirements.txt
-
-    ```
-    Or you can download the scapy library instead of installing "-r requirements.txt":
-
-    ```
     pip install scapy
 
     ```
