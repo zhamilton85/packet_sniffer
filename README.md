@@ -27,6 +27,14 @@ A Python3-based packet sniffer for Linux, utilizing the Scapy library to capture
     pip install -r requirements.txt
 
     ```
+    You can also download the scapy library:
+
+    ```
+    pip install scapy
+
+    ```
+   Note: Depending on your setup, you might need to use pip3 instead of pip.
+
 
 ## Usage
 
